@@ -35,7 +35,7 @@
   const apply = () => {
     const w=t[lang]; document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr"; select.value=lang; select.setAttribute("aria-label",w.language);
     text(".navlinks a[href='#apps']",w.navApps); text(".navlinks a[href='#downloads']",w.navDownloads); withIcon(".nav-cta",w.navCta);
-    text(".hero .eyebrow",w.heroEyebrow); text("#hero-title",w.heroTitle); text(".hero-copy",w.heroCopy); withIcon(".hero-actions .button:first-child",w.browse); withIcon(".hero-actions .button:nth-child(2)",w.allReleases); text(".mini-note",w.note,true);
+    text(".hero .eyebrow",w.heroEyebrow); document.querySelector("#hero-title").innerHTML=w.heroTitle; text(".hero-copy",w.heroCopy); withIcon(".hero-actions .button:first-child",w.browse); withIcon(".hero-actions .button:nth-child(2)",w.allReleases); text(".mini-note",w.note,true);
     text(".showcase-tag",w.featured); text(".showcase-sub",w.showcase); withIcon(".showcase-bottom .button",w.setup);
     text(".section-head .eyebrow",w.libraryEyebrow); text(".section-head h2",w.libraryTitle); text(".section-sub",w.librarySub); withIcon(".section-head .text-link",w.latest);
     withIcon(".filter[data-filter='all']",w.all); search.placeholder=w.search; search.setAttribute("aria-label",w.search); search.closest(".search").setAttribute("aria-label",w.search);
@@ -50,5 +50,6 @@
   buttons.forEach(button=>button.addEventListener("click",()=>{platform=button.dataset.filter;buttons.forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});update();}));
   search.addEventListener("input",update); select.addEventListener("change",()=>{lang=select.value;localStorage.setItem("cappa-hub-language",lang);apply();update();}); apply();
 })();
+
 
 
