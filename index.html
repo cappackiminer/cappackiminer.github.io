@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07151b">
+  <link rel="icon" type="image/png" href="./cappa-logo.png">
   <meta name="description" content="CAPPA uygulamalarını keşfet ve resmi GitHub sürümlerinden indir.">
   <title>CAPPA — Uygulama Merkezi</title>
   <style>
@@ -11,7 +12,7 @@
     * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:radial-gradient(ellipse at 14% 0%,rgba(45,113,119,.2),transparent 34rem),radial-gradient(ellipse at 96% 19%,rgba(179,130,53,.12),transparent 27rem),var(--bg); color:var(--ink); min-width:320px; }
     a { color:inherit; text-decoration:none; } button,input { font:inherit; } .shell { width:min(1160px,calc(100% - 48px)); margin:0 auto; }
     .topbar { height:82px; display:flex; align-items:center; border-bottom:1px solid var(--line); } .nav { display:flex; align-items:center; justify-content:space-between; gap:24px; width:100%; }
-    .brand { display:inline-flex; align-items:center; gap:12px; font-weight:780; letter-spacing:.13em; font-size:13px; } .brand-mark { height:38px; width:38px; display:grid; place-items:center; border-radius:50%; color:#17160e; font:800 17px Georgia,serif; border:1px solid rgba(245,217,153,.72); background:radial-gradient(circle at 34% 28%,#fff0c6,#d7a947 56%,#76501b); box-shadow:0 0 26px rgba(230,189,114,.17),inset 0 1px 3px #fff6d4; }
+    .brand { display:inline-flex; align-items:center; gap:12px; font-weight:780; letter-spacing:.13em; font-size:13px; } .brand-logo { height:42px; width:42px; display:block; flex:none; object-fit:contain; border-radius:50%; border:1px solid rgba(245,217,153,.48); box-shadow:0 0 23px rgba(230,189,114,.22); }
     .brand span:last-child { color:#a7b7b4; font-size:10px; font-weight:650; letter-spacing:.2em; margin-left:2px; } .navlinks { display:flex; align-items:center; gap:30px; color:#b3c0bd; font-size:13px; } .navlinks a:hover { color:var(--gold-bright); }
     .nav-cta,.button { min-height:42px; padding:0 18px; display:inline-flex; align-items:center; justify-content:center; gap:9px; border-radius:999px; border:1px solid rgba(230,189,114,.55); color:#19190f; background:linear-gradient(135deg,#f4d793,#dcae5d); font-weight:750; font-size:12px; box-shadow:0 8px 25px rgba(205,153,61,.11); transition:transform .18s ease,filter .18s ease; }
     .nav-cta:hover,.button:hover { transform:translateY(-2px); filter:brightness(1.06); } .hero { padding:74px 0 54px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:44px; }
@@ -45,7 +46,7 @@
 </head>
 <body>
   <header class="topbar"><div class="shell nav">
-    <a class="brand" href="#top" aria-label="CAPPA ana sayfa"><span class="brand-mark">C</span><span>CAPPA <span>SOFTWARE</span></span></a>
+    <a class="brand" href="#top" aria-label="CAPPA ana sayfa"><img class="brand-logo" src="./cappa-logo.png" alt=""><span>CAPPA <span>SOFTWARE</span></span></a>
     <nav class="navlinks" aria-label="Ana menü"><a href="#apps">Uygulamalar</a><a href="#downloads">İndirme bilgisi</a><a href="#prices">Fiyat listesi</a><a href="https://github.com/cappackiminer/CappAckiMiner" target="_blank" rel="noopener">GitHub ↗</a></nav>
     <a class="nav-cta" href="#apps">Uygulamaları keşfet <span aria-hidden="true">↘</span></a>
   </div></header>
@@ -86,5 +87,6 @@
   <script src="./i18n.js"></script>
 </body>
 </html>
+
 
 
