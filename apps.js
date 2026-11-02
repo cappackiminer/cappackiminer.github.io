@@ -4,8 +4,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Miner",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.75",
-    "file": "CAPPA-Miner-v1.0.75-x64-Setup.exe",
+    "version": "1.0.76",
+    "file": "CAPPA-Miner-v1.0.76-x64-Setup.exe",
     "icon": "miner.png",
     "search": "real engine mining"
   },

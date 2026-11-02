@@ -63,7 +63,12 @@ window.CAPPA_TEXT = {
     "gallery": "Uygulama önizlemesi",
     "newVersion": "Güncel sürüm",
     "downloadSource": "GitHub Releases üzerinden",
-    "skip": "İçeriğe geç"
+    "skip": "İçeriğe geç",
+    "licenseNav": "Lisans rehberi",
+    "licenseTitle": "Lisans almak için adım adım rehber",
+    "licenseCopy": "Satın alma, yenileme ve manuel kod adımlarını ekran görüntüleriyle öğrenin. Rehberi kendi dilinizde açın veya PDF olarak indirin.",
+    "licenseOpen": "Lisans rehberini aç",
+    "licensePdf": "PDF indir"
   },
   "en": {
     "language": "Language",
@@ -129,7 +134,12 @@ window.CAPPA_TEXT = {
     "gallery": "Application preview",
     "newVersion": "Current release",
     "downloadSource": "Via GitHub Releases",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "licenseNav": "License guide",
+    "licenseTitle": "Your step-by-step license guide",
+    "licenseCopy": "Follow illustrated steps for buying, renewing and using a manual code. Open the guide in your language or download the PDF.",
+    "licenseOpen": "Open license guide",
+    "licensePdf": "Download PDF"
   },
   "ru": {
     "language": "Язык",
@@ -195,7 +205,12 @@ window.CAPPA_TEXT = {
     "gallery": "Интерфейс приложения",
     "newVersion": "Актуальный релиз",
     "downloadSource": "Через GitHub Releases",
-    "skip": "К содержимому"
+    "skip": "К содержимому",
+    "licenseNav": "Лицензия: помощь",
+    "licenseTitle": "Пошаговое руководство по лицензии",
+    "licenseCopy": "Покупка, продление и ручной код — с иллюстрациями. Откройте руководство на своём языке или скачайте PDF.",
+    "licenseOpen": "Открыть руководство",
+    "licensePdf": "Скачать PDF"
   },
   "ar": {
     "language": "اللغة",
@@ -261,7 +276,12 @@ window.CAPPA_TEXT = {
     "gallery": "معاينة التطبيق",
     "newVersion": "الإصدار الحالي",
     "downloadSource": "عبر GitHub Releases",
-    "skip": "انتقل إلى المحتوى"
+    "skip": "انتقل إلى المحتوى",
+    "licenseNav": "دليل الترخيص",
+    "licenseTitle": "دليل الترخيص خطوة بخطوة",
+    "licenseCopy": "تعرّف بالصور على الشراء والتجديد واستخدام الرمز اليدوي. افتح الدليل بلغتك أو نزّله بصيغة PDF.",
+    "licenseOpen": "فتح دليل الترخيص",
+    "licensePdf": "تنزيل PDF"
   },
   "zh": {
     "language": "语言",
@@ -327,7 +347,12 @@ window.CAPPA_TEXT = {
     "gallery": "应用预览",
     "newVersion": "当前版本",
     "downloadSource": "通过 GitHub Releases",
-    "skip": "跳转到内容"
+    "skip": "跳转到内容",
+    "licenseNav": "许可证指南",
+    "licenseTitle": "许可证申请分步指南",
+    "licenseCopy": "通过图文步骤了解购买、续期和手动代码激活。打开所选语言的指南，或下载 PDF。",
+    "licenseOpen": "打开许可证指南",
+    "licensePdf": "下载 PDF"
   },
   "id": {
     "language": "Bahasa",
@@ -393,6 +418,11 @@ window.CAPPA_TEXT = {
     "gallery": "Pratinjau aplikasi",
     "newVersion": "Rilis terbaru",
     "downloadSource": "Melalui GitHub Releases",
-    "skip": "Lewati ke konten"
+    "skip": "Lewati ke konten",
+    "licenseNav": "Panduan lisensi",
+    "licenseTitle": "Panduan lisensi langkah demi langkah",
+    "licenseCopy": "Ikuti langkah bergambar untuk membeli, memperpanjang, dan memakai kode manual. Buka panduan dalam bahasa Anda atau unduh PDF.",
+    "licenseOpen": "Buka panduan lisensi",
+    "licensePdf": "Unduh PDF"
   }
 };

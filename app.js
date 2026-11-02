@@ -3,6 +3,7 @@
   const dictionaries=window.CAPPA_TEXT, apps=window.CAPPA_APPS;
   const release='https://github.com/cappackiminer/CappAckiMiner/releases/download/downloads-2026-10-18/';
   const releasePage='https://github.com/cappackiminer/CappAckiMiner/releases/tag/downloads-2026-10-18';
+  const licensePdfs={tr:'CAPPA-Lisans-Rehberi-Turkce.pdf',en:'CAPPA-License-Guide-English.pdf',ru:'CAPPA-License-Guide-Russian.pdf',ar:'CAPPA-License-Guide-Arabic.pdf',zh:'CAPPA-License-Guide-Chinese.pdf',id:'CAPPA-License-Guide-Indonesian.pdf'};
   const select=document.getElementById('language-select'),search=document.getElementById('search');
   const cards=[...document.querySelectorAll('.app-card')],filters=[...document.querySelectorAll('.filter')];
   const dialog=document.getElementById('lightbox'),body=document.getElementById('dialog-body');
@@ -11,6 +12,11 @@
   if(!Object.hasOwn(dictionaries,lang))lang='tr';
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const w=()=>dictionaries[lang];
+  const licenseHelpUrl=()=>`./help/license/#${lang}`;
+  function updateLicenseHelp(){
+    document.querySelectorAll('[data-license-help]').forEach(link=>link.href=licenseHelpUrl());
+    document.querySelectorAll('[data-license-pdf]').forEach(link=>link.href='./help/license/'+licensePdfs[lang]);
+  }
   function filterCards(){
     const term=search.value.trim().toLocaleLowerCase(lang);let shown=0;
     for(const card of cards){const yes=(platform==='all'||card.dataset.platform===platform)&&(!term||(card.textContent+' '+card.dataset.search).toLocaleLowerCase(lang).includes(term));card.hidden=!yes;if(yes)shown++;}
@@ -29,7 +35,7 @@
     document.querySelector('.close-dialog').setAttribute('aria-label',w().close);
     document.title='CAPPA — '+w().libraryTitle;
     document.querySelector('meta[name=description]').content=w().heroCopy;
-    if(dialog.open&&modal)renderModal(modal);filterCards();
+    if(dialog.open&&modal)renderModal(modal);updateLicenseHelp();filterCards();
   }
   function renderModal(target){
     const s=w();dialog.dataset.kind=target.kind;
@@ -37,12 +43,12 @@
       document.getElementById('dialog-title').textContent=s.priceTitle;
       body.innerHTML=`<img class="poster-full" src="./license-price-list.jpg" alt="${escape(s.priceAlt)}" width="853" height="1280"><p class="dialog-caption">${escape(s.posterTerms)}</p><a class="quiet-link" href="./license-price-list.jpg" target="_blank" rel="noopener noreferrer">${escape(s.fullImage)} ↗</a>`;
     }else if(target.kind==='preview'){
-      document.getElementById('dialog-title').textContent='CAPPA Miner · v1.0.75';
-      body.innerHTML=`<img class="dialog-image" src="./assets/miner-preview.png" width="1280" height="680" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
+      document.getElementById('dialog-title').textContent='CAPPA Miner · v'+apps[0].version;
+      body.innerHTML=`<img class="dialog-image" src="./assets/miner-preview.png" width="1280" height="680" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
     }else{
       const app=apps.find(a=>a.id===target.id);if(!app)return;
       document.getElementById('dialog-title').textContent=app.name;
-      body.innerHTML=`<div class="detail-intro">${app.icon?`<img src="./assets/${escape(app.icon)}" alt="" width="72" height="72">`:''}<p>${escape(s[app.id])}</p></div><dl class="detail-specs"><div><dt>${escape(s.version)}</dt><dd>${escape(app.version)}</dd></div><div><dt>${escape(s.platformLabel)}</dt><dd>${escape(app.os)}</dd></div><div><dt>${escape(s.package)}</dt><dd>${app.platform==='android'?'Universal APK':'Windows Setup'}</dd></div></dl>${app.id==='miner'?`<img class="dialog-image" src="./assets/miner-preview.png" width="1280" height="680" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p>`:''}<div class="dialog-cta"><a class="button" href="${release+app.file}">${escape(app.platform==='android'?s.apk:s.setup)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
+      body.innerHTML=`<div class="detail-intro">${app.icon?`<img src="./assets/${escape(app.icon)}" alt="" width="72" height="72">`:''}<p>${escape(s[app.id])}</p></div><dl class="detail-specs"><div><dt>${escape(s.version)}</dt><dd>${escape(app.version)}</dd></div><div><dt>${escape(s.platformLabel)}</dt><dd>${escape(app.os)}</dd></div><div><dt>${escape(s.package)}</dt><dd>${app.platform==='android'?'Universal APK':'Windows Setup'}</dd></div></dl>${app.id==='miner'?`<img class="dialog-image" src="./assets/miner-preview.png" width="1280" height="680" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p>`:''}<div class="dialog-cta"><a class="button" href="${release+app.file}">${escape(app.platform==='android'?s.apk:s.setup)} ↗</a>${app.id==='miner'?`<a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a>`:''}<a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
     }
   }
   function openModal(target,button){modal=target;opener=button;renderModal(target);dialog.showModal();document.body.classList.add('modal-open');dialog.scrollTop=0;}
