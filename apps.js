@@ -1,11 +1,11 @@
 window.CAPPA_APPS = [
   {
     "id": "miner",
-    "name": "CAPPA Miner",
+    "name": "CAPPA hardworker",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.76",
-    "file": "CAPPA-Miner-v1.0.76-x64-Setup.exe",
+    "version": "1.0.88",
+    "file": "CAPPA-hardworker-v1.0.88-x64-Setup.exe",
     "icon": "miner.png",
     "search": "real engine mining"
   },
