@@ -30,16 +30,6 @@ window.CAPPA_APPS = [
     "search": "reward tracker wallet"
   },
   {
-    "id": "eye",
-    "name": "CappAckiMiner Eye",
-    "platform": "windows",
-    "os": "Windows · x64",
-    "version": "1.0.48",
-    "file": "CappAckiMiner-Eye-v1.0.48-FastReads-CardFlash10s-4allWhite-x64-Setup-DailyEpochFix.exe",
-    "icon": "eye.png",
-    "search": "wallet dashboard balance"
-  },
-  {
     "id": "backup",
     "name": "Legacy Backup Converter",
     "platform": "windows",
