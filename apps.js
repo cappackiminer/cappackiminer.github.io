@@ -1,23 +1,23 @@
 window.CAPPA_APPS = [
   {
     "id": "miner",
-    "name": "CAPPA hardworker",
+    "name": "CAPPA Eagle",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.88",
-    "file": "CAPPA-hardworker-v1.0.88-x64-Setup.exe",
+    "version": "1.0.97",
+    "file": "CAPPA-Eagle-v1.0.97-AcceptRateFix-x64-Setup.exe",
     "icon": "miner.png",
-    "search": "real engine mining"
+    "search": "eagle real engine mining windows x64"
   },
   {
     "id": "bee6",
-    "name": "CappAckiMiner Bee6",
+    "name": "CAPPA Eagle Android",
     "platform": "android",
-    "os": "Android · Universal",
-    "version": "6000007",
-    "file": "CappAckiMiner-6.0.0-Bee6-NativePoW-6000007-Universal.apk",
-    "icon": "bee6.png",
-    "search": "native pow universal apk"
+    "os": "Android 7+ · ARM64 / ARMv7",
+    "version": "1.0.93 · 6000016",
+    "file": "CAPPA-Eagle-v1.0.93-Android-6000016-ARM.apk",
+    "icon": "eagle-android.png",
+    "search": "eagle android native pow arm64 armv7 apk"
   },
   {
     "id": "epoch",
