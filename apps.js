@@ -5,7 +5,7 @@ window.CAPPA_APPS = [
     "platform": "windows",
     "os": "Windows · x64",
     "version": "1.0.97",
-    "file": "CAPPA-Eagle-v1.0.97-AcceptRateFix-x64-Setup.exe",
+    "file": "CAPPA-Eagle-v1.0.97-EagleRight-x64-Setup.exe",
     "icon": "eagle-gold.png",
     "search": "eagle real engine mining windows x64"
   },
