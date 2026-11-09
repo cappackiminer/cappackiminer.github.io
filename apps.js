@@ -6,18 +6,8 @@ window.CAPPA_APPS = [
     "os": "Windows · x64",
     "version": "1.0.97",
     "file": "CAPPA-Eagle-v1.0.97-AcceptRateFix-x64-Setup.exe",
-    "icon": "miner.png",
+    "icon": "eagle-gold.png",
     "search": "eagle real engine mining windows x64"
-  },
-  {
-    "id": "bee6",
-    "name": "CAPPA Eagle Android",
-    "platform": "android",
-    "os": "Android 7+ · ARM64 / ARMv7",
-    "version": "1.0.93 · 6000016",
-    "file": "CAPPA-Eagle-v1.0.93-Android-6000016-ARM.apk",
-    "icon": "eagle-android.png",
-    "search": "eagle android native pow arm64 armv7 apk"
   },
   {
     "id": "epoch",

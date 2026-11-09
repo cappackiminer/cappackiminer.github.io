@@ -30,7 +30,7 @@
     search.placeholder=w().search;search.setAttribute('aria-label',w().search);
     document.getElementById('price-image').alt=w().priceAlt;
     document.querySelector('.preview-button').setAttribute('aria-label',w().gallery);
-    document.querySelector('.preview-button img').alt='CAPPA hardworker · '+w().demo;
+    document.querySelector('.preview-button img').alt=w().demo;
     document.querySelector('.poster-preview').setAttribute('aria-label',w().priceOpen);
     document.querySelector('.close-dialog').setAttribute('aria-label',w().close);
     document.title='CAPPA — '+w().libraryTitle;
@@ -43,12 +43,12 @@
       document.getElementById('dialog-title').textContent=s.priceTitle;
       body.innerHTML=`<img class="poster-full" src="./license-price-list.jpg" alt="${escape(s.priceAlt)}" width="853" height="1280"><p class="dialog-caption">${escape(s.posterTerms)}</p><a class="quiet-link" href="./license-price-list.jpg" target="_blank" rel="noopener noreferrer">${escape(s.fullImage)} ↗</a>`;
     }else if(target.kind==='preview'){
-      document.getElementById('dialog-title').textContent='CAPPA hardworker · v1.0.88';
-      body.innerHTML=`<img class="dialog-image" src="./assets/license-preview.png" width="1100" height="760" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
+      document.getElementById('dialog-title').textContent=`${apps[0].name} · v${apps[0].version}`;
+      body.innerHTML=`<img class="dialog-image" src="./assets/eagle-preview.png" width="1472" height="157" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
     }else{
       const app=apps.find(a=>a.id===target.id);if(!app)return;
       document.getElementById('dialog-title').textContent=app.name;
-      body.innerHTML=`<div class="detail-intro">${app.icon?`<img src="./assets/${escape(app.icon)}" alt="" width="72" height="72">`:''}<p>${escape(s[app.id])}</p></div><dl class="detail-specs"><div><dt>${escape(s.version)}</dt><dd>${escape(app.version)}</dd></div><div><dt>${escape(s.platformLabel)}</dt><dd>${escape(app.os)}</dd></div><div><dt>${escape(s.package)}</dt><dd>${app.platform==='android'?'ARM APK':'Windows Setup'}</dd></div></dl>${app.id==='miner'?`<img class="dialog-image" src="./assets/license-preview.png" width="1100" height="760" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p>`:''}<div class="dialog-cta"><a class="button" href="${release+app.file}">${escape(app.platform==='android'?s.apk:s.setup)} ↗</a>${app.id==='miner'?`<a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a>`:''}<a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
+      body.innerHTML=`<div class="detail-intro">${app.icon?`<img src="./assets/${escape(app.icon)}" alt="" width="72" height="72">`:''}<p>${escape(s[app.id])}</p></div><dl class="detail-specs"><div><dt>${escape(s.version)}</dt><dd>${escape(app.version)}</dd></div><div><dt>${escape(s.platformLabel)}</dt><dd>${escape(app.os)}</dd></div><div><dt>${escape(s.package)}</dt><dd>Windows Setup</dd></div></dl>${app.id==='miner'?`<img class="dialog-image" src="./assets/eagle-preview.png" width="1472" height="157" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p>`:''}<div class="dialog-cta"><a class="button" href="${release+app.file}">${escape(s.setup)} ↗</a>${app.id==='miner'?`<a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a>`:''}<a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
     }
   }
   function openModal(target,button){modal=target;opener=button;renderModal(target);dialog.showModal();document.body.classList.add('modal-open');dialog.scrollTop=0;}
