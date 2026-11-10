@@ -14,8 +14,8 @@ window.CAPPA_APPS = [
     "name": "Last Epoch",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.24",
-    "file": "CappAckiMiner-Last-Epoch-v1.0.24-Clickable-Sorting-x64-Setup.exe",
+    "version": "1.0.25",
+    "file": "CappAckiMiner-Last-Epoch-v1.0.25-LiveTap-x64-Setup.exe",
     "icon": "last-epoch.png",
     "search": "reward tracker wallet"
   },
