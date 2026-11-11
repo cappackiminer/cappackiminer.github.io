@@ -12,7 +12,7 @@ window.CAPPA_TEXT = {
     "navCta": "Uygulamaları keşfet",
     "heroEyebrow": "Resmî CAPPA uygulama merkezi",
     "heroTitle": "İhtiyacın olan<br><em>araçlar, tek yerde.</em>",
-    "heroCopy": "CAPPA uygulamalarının güncel Windows sürümlerini resmî GitHub yayınlarından indir.",
+    "heroCopy": "CAPPA uygulamalarının güncel Windows ve Android sürümlerini resmî GitHub yayınlarından indir.",
     "browse": "Uygulamaları gör",
     "allReleases": "Tüm GitHub sürümleri",
     "note": "İndirme dosyaları resmî GitHub Releases deposunda tutulur",
@@ -65,7 +65,9 @@ window.CAPPA_TEXT = {
     "licenseTitle": "CAPPA Eagle lisans bilgisi",
     "licenseCopy": "Lisanslanacak cüzdanları, NACKL veya SHELL’i ve kalan süre sınırına uygun 30–180 günlük seçeneği seçin. Tutarı iki ondalık hanesiyle 5 dakika içinde gönderin. Onay yaklaşık 10 dakika sürebilir. Manuel kod da kullanılabilir.",
     "licenseOpen": "Lisans rehberini aç",
-    "licensePdf": "PDF indir"
+    "licensePdf": "PDF indir",
+    "android": "Android 7 ve üzeri için CAPPA Eagle. 32 ve 64 bit ARM desteği, 155 saniyelik hesaplama süresi ve cüzdan adına lisanslama.",
+    "apk": "APK indir"
   },
   "en": {
     "language": "Language",
@@ -80,7 +82,7 @@ window.CAPPA_TEXT = {
     "navCta": "Explore apps",
     "heroEyebrow": "Official CAPPA app hub",
     "heroTitle": "Tools you need,<br><em>all in one place.</em>",
-    "heroCopy": "Download the latest Windows versions of CAPPA apps from the official GitHub releases.",
+    "heroCopy": "Download the latest Windows and Android versions of CAPPA apps from official GitHub releases.",
     "browse": "Browse apps",
     "allReleases": "All GitHub releases",
     "note": "Downloads are hosted in the official GitHub Releases repository",
@@ -133,7 +135,9 @@ window.CAPPA_TEXT = {
     "licenseTitle": "CAPPA Eagle licensing",
     "licenseCopy": "Select wallets, NACKL or SHELL, and an allowed 30–180 day term within the remaining-term limit. Send the exact amount with both decimals within five minutes. Confirmation can take about 10 minutes. Manual codes are also supported.",
     "licenseOpen": "Open license guide",
-    "licensePdf": "Download PDF"
+    "licensePdf": "Download PDF",
+    "android": "CAPPA Eagle for Android 7 and later. Supports 32-bit and 64-bit ARM, a 155-second computation window and licensing by wallet name.",
+    "apk": "Download APK"
   },
   "ru": {
     "language": "Язык",
@@ -148,7 +152,7 @@ window.CAPPA_TEXT = {
     "navCta": "Смотреть приложения",
     "heroEyebrow": "Официальный центр приложений CAPPA",
     "heroTitle": "Нужные инструменты<br><em>в одном месте.</em>",
-    "heroCopy": "Загрузите актуальные версии приложений CAPPA для Windows из официальных релизов GitHub.",
+    "heroCopy": "Загрузите актуальные версии приложений CAPPA для Windows и Android из официальных релизов GitHub.",
     "browse": "Все приложения",
     "allReleases": "Все релизы GitHub",
     "note": "Файлы размещены в официальном репозитории GitHub Releases",
@@ -201,7 +205,9 @@ window.CAPPA_TEXT = {
     "licenseTitle": "Лицензия CAPPA Eagle",
     "licenseCopy": "Выберите кошельки, NACKL или SHELL и доступный срок 30–180 дней с учётом остатка. Отправьте точную сумму с двумя знаками после запятой в течение пяти минут. Подтверждение может занять около 10 минут. Доступен ручной код.",
     "licenseOpen": "Открыть руководство",
-    "licensePdf": "Скачать PDF"
+    "licensePdf": "Скачать PDF",
+    "android": "CAPPA Eagle для Android 7 и новее. Поддержка 32- и 64-битных ARM, время вычислений 155 секунд и лицензии по имени кошелька.",
+    "apk": "Скачать APK"
   },
   "ar": {
     "language": "اللغة",
@@ -216,7 +222,7 @@ window.CAPPA_TEXT = {
     "navCta": "استكشف التطبيقات",
     "heroEyebrow": "مركز تطبيقات CAPPA الرسمي",
     "heroTitle": "الأدوات التي تحتاجها<br><em>في مكان واحد.</em>",
-    "heroCopy": "نزّل أحدث إصدارات تطبيقات CAPPA لنظام Windows من الإصدارات الرسمية على GitHub.",
+    "heroCopy": "نزّل أحدث إصدارات تطبيقات CAPPA لنظامي Windows وAndroid من الإصدارات الرسمية على GitHub.",
     "browse": "تصفح التطبيقات",
     "allReleases": "كل إصدارات GitHub",
     "note": "تُستضاف ملفات التنزيل في مستودع GitHub Releases الرسمي",
@@ -269,7 +275,9 @@ window.CAPPA_TEXT = {
     "licenseTitle": "ترخيص CAPPA Eagle",
     "licenseCopy": "اختر المحافظ وعملة NACKL أو SHELL ومدة متاحة بين 30 و180 يوماً ضمن حد المدة المتبقية. أرسل المبلغ الدقيق بمنزلتين عشريتين خلال خمس دقائق. قد يستغرق التأكيد نحو 10 دقائق. يتوفر أيضاً رمز يدوي.",
     "licenseOpen": "افتح دليل الترخيص",
-    "licensePdf": "نزّل PDF"
+    "licensePdf": "نزّل PDF",
+    "android": "CAPPA Eagle لنظام Android 7 والإصدارات الأحدث. دعم ARM بمعمارية 32 و64 بت، وفترة حساب مدتها 155 ثانية، وترخيص باسم المحفظة.",
+    "apk": "تنزيل APK"
   },
   "zh": {
     "language": "语言",
@@ -284,7 +292,7 @@ window.CAPPA_TEXT = {
     "navCta": "浏览应用",
     "heroEyebrow": "CAPPA 官方应用中心",
     "heroTitle": "你需要的工具，<br><em>尽在一处。</em>",
-    "heroCopy": "从 GitHub 官方发布页下载最新的 CAPPA Windows 应用。",
+    "heroCopy": "从 GitHub 官方发布页下载最新的 CAPPA Windows 和 Android 应用。",
     "browse": "查看应用",
     "allReleases": "所有 GitHub 版本",
     "note": "下载文件托管在官方 GitHub Releases 仓库",
@@ -337,7 +345,9 @@ window.CAPPA_TEXT = {
     "licenseTitle": "CAPPA Eagle 许可",
     "licenseCopy": "选择钱包、NACKL 或 SHELL，以及符合剩余期限限制的 30 至 180 天期限。请在五分钟内按显示金额精确支付到小数点后两位。确认约需 10 分钟。也可使用手动许可码。",
     "licenseOpen": "打开许可指南",
-    "licensePdf": "下载 PDF"
+    "licensePdf": "下载 PDF",
+    "android": "适用于 Android 7 及更高版本的 CAPPA Eagle。支持 32 位及 64 位 ARM、155 秒计算时段和按钱包名称授权。",
+    "apk": "下载 APK"
   },
   "id": {
     "language": "Bahasa",
@@ -352,7 +362,7 @@ window.CAPPA_TEXT = {
     "navCta": "Jelajahi aplikasi",
     "heroEyebrow": "Pusat aplikasi resmi CAPPA",
     "heroTitle": "Alat yang kamu butuhkan,<br><em>semuanya di satu tempat.</em>",
-    "heroCopy": "Unduh versi Windows terbaru aplikasi CAPPA dari rilis resmi GitHub.",
+    "heroCopy": "Unduh versi Windows dan Android terbaru aplikasi CAPPA dari rilis resmi GitHub.",
     "browse": "Lihat aplikasi",
     "allReleases": "Semua rilis GitHub",
     "note": "File unduhan tersedia di repositori GitHub Releases resmi",
@@ -405,6 +415,8 @@ window.CAPPA_TEXT = {
     "licenseTitle": "Lisensi CAPPA Eagle",
     "licenseCopy": "Pilih dompet, NACKL atau SHELL, dan masa 30–180 hari sesuai batas sisa masa lisensi. Kirim nominal persis hingga dua desimal dalam lima menit. Konfirmasi dapat memerlukan sekitar 10 menit. Kode manual juga tersedia.",
     "licenseOpen": "Buka panduan lisensi",
-    "licensePdf": "Unduh PDF"
+    "licensePdf": "Unduh PDF",
+    "android": "CAPPA Eagle untuk Android 7 dan yang lebih baru. Mendukung ARM 32-bit dan 64-bit, waktu komputasi 155 detik, dan lisensi berdasarkan nama dompet.",
+    "apk": "Unduh APK"
   }
 };
