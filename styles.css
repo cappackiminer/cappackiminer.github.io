@@ -18,6 +18,46 @@ dialog{position:fixed;width:min(1000px,calc(100vw - 32px));max-height:calc(100dv
 @media(max-width:560px){.trust{display:grid;grid-template-columns:33px minmax(0,1fr);gap:14px 18px}.trust>.quiet-link{grid-column:2;margin-inline-start:0;justify-self:start}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.product-window,.hero-art:hover .product-window,.poster-preview,.poster-preview:hover{transform:none}}
 
+.app-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.new-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid #ffe6a2;
+  border-radius: 999px;
+  color: #30210d;
+  background: linear-gradient(110deg, #eeb551 25%, #fff7cf 46%, #eeb551 64%, #ffe7a6 88%) 100% 50% / 250% 100%;
+  box-shadow: 0 0 17px #ffd56cad, inset 0 1px #ffffffb3;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: .045em;
+  white-space: nowrap;
+  animation: boost-badge-shine 2.4s ease-in-out 2;
+}
+
+.boost-qr-note {
+  display: block;
+  margin-top: 9px;
+  color: #ff777e;
+  font-weight: 750;
+}
+
+@keyframes boost-badge-shine {
+  from { background-position: 100% 50%; }
+  to { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-card:hover { transform: none; }
+}
+
 /* License help uses the existing catalogue palette and language direction. */
 .license-help{display:flex;align-items:center;gap:24px;margin-block:0 52px;padding:28px 30px;border:1px solid #d5b66d66;border-radius:18px;background:linear-gradient(115deg,#1d3f43,#10262e);box-shadow:0 12px 32px #0002}.license-help-mark{width:58px;height:66px;flex:none;display:grid;place-items:center;color:var(--gold);border:1px solid #d2b57855;border-radius:13px;background:#ddbf7910}.license-help-mark svg{width:40px;height:40px}.license-help-copy{flex:1;min-width:0}.license-help h2{font-size:23px;line-height:1.3;font-weight:550;letter-spacing:-.025em;margin:7px 0 9px}.license-help p{font-size:14px;line-height:1.75;color:#c2d1c9;margin:0;max-width:660px}.license-help-actions{display:flex;flex-direction:column;align-items:center;gap:14px;flex:none}.license-help-actions .button{min-height:46px;font-size:14px;padding:12px 19px;gap:14px}.license-help-actions .quiet-link{font-size:13px}.license-help .eyebrow{font-size:10px}
 @media(max-width:1100px){.navlinks a[href="#downloads"]{display:none}.license-help{gap:20px;padding:24px}.license-help h2{font-size:21px}}
