@@ -4,10 +4,10 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.97",
-    "file": "CAPPA-Eagle-v1.0.97-Windows-x64-Setup.exe",
+    "version": "1.1.0",
+    "file": "CAPPA-Eagle-v1.1.0-x64-Setup.exe",
     "icon": "eagle-gold.png",
-    "search": "eagle real engine mining windows x64"
+    "search": "eagle CAPPA Eagle Windows windows x64"
   },
   {
     "id": "android",

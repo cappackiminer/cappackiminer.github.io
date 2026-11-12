@@ -4,7 +4,7 @@ Static multilingual download catalogue for CAPPA applications. The site links to
 
 Languages: Turkish, English, Russian, Arabic, Simplified Chinese, and Indonesian.
 
-Current Windows release: CAPPA Eagle v1.0.97.
+Current Windows release: CAPPA Eagle v1.1.0.
 
 License help is published at `/help/license/`; the site carries its selected language in the URL fragment. The guide is self-contained and the six matching PDFs can also be downloaded from that directory.
 
