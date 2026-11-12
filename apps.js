@@ -38,5 +38,15 @@ window.CAPPA_APPS = [
     "file": "CappAckiMiner-Legacy-Backup-Converter-Setup.exe",
     "icon": null,
     "search": "utility backup wallet converter"
+  },
+  {
+    "id": "boost",
+    "name": "CAPPA Boost",
+    "platform": "windows",
+    "os": "Windows · x64",
+    "version": "1.0.10",
+    "file": "CAPPA-Boost-v1.0.10-x64-Setup.exe",
+    "icon": "cappa-boost.png",
+    "search": "CAPPA Boost Windows x64 Acki Nacki Farm MamaBoard"
   }
 ];
