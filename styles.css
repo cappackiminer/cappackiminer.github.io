@@ -25,21 +25,24 @@ dialog{position:fixed;width:min(1000px,calc(100vw - 32px));max-height:calc(100dv
   gap: 10px;
 }
 
-.new-badge {
+.maintenance-badge {
   display: inline-flex;
   align-items: center;
   padding: 4px 10px;
-  border: 1px solid #ffe6a2;
+  border: 1px solid #eac98057;
   border-radius: 999px;
-  color: #30210d;
-  background: linear-gradient(110deg, #eeb551 25%, #fff7cf 46%, #eeb551 64%, #ffe7a6 88%) 100% 50% / 250% 100%;
-  box-shadow: 0 0 17px #ffd56cad, inset 0 1px #ffffffb3;
+  color: var(--gold);
+  background: #bfa3671a;
   font-size: 11px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: .045em;
   white-space: nowrap;
-  animation: boost-badge-shine 2.4s ease-in-out 2;
+}
+
+.maintenance-notice {
+  color: var(--gold);
+  font-size: 13px;
 }
 
 .boost-qr-note {
@@ -47,11 +50,6 @@ dialog{position:fixed;width:min(1000px,calc(100vw - 32px));max-height:calc(100dv
   margin-top: 9px;
   color: #ff777e;
   font-weight: 750;
-}
-
-@keyframes boost-badge-shine {
-  from { background-position: 100% 50%; }
-  to { background-position: 0% 50%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
