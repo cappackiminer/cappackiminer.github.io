@@ -4,7 +4,7 @@ Static multilingual download catalogue for CAPPA applications. The site links to
 
 Languages: Turkish, English, Russian, Arabic, Simplified Chinese, and Indonesian.
 
-Current Windows release: CAPPA Eagle v1.1.1.
+Current Windows release: CAPPA Eagle v1.1.2.
 
 Current CAPPA Boost release: v1.0.14 for Windows x64.
 
