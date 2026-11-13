@@ -13,4 +13,4 @@ License help is published at `/help/license/`; the site carries its selected lan
 CAPPA Eagle Windows: unlimited saved wallets and public reads; automatic purchase selection 1–200; verified manual-license renewal import; daily epoch pause 2–12 hours/local time; engine selection 1–12.
 The home page shows the CAPPA Eagle header with sample data.
 
-Current Android release: CAPPA Eagle 1.0.93, build 6000029, universal ARM APK for Android 7 and later. The computation window is 155 seconds.
+Current Android release: CAPPA Eagle 1.0.94, build 6000030, universal ARM APK for Android 7 and later. The computation window is 155 seconds.
