@@ -12,6 +12,7 @@
   if(!Object.hasOwn(dictionaries,lang))lang='tr';
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const w=()=>dictionaries[lang];
+  const pricePoster=()=>lang==='tr'?'./assets/eagle-license-prices-tr.png':'./assets/eagle-license-prices-en.png';
   const licenseHelpUrl=()=>`./help/license/#${lang}`;
   function updateLicenseHelp(){
     document.querySelectorAll('[data-license-help]').forEach(link=>link.href=licenseHelpUrl());
@@ -28,7 +29,9 @@
     // Only the six local, author-controlled heading strings contain markup.
     document.querySelectorAll('[data-i18n-html]').forEach(el=>el.innerHTML=w()[el.dataset.i18nHtml]||'');
     search.placeholder=w().search;search.setAttribute('aria-label',w().search);
-    document.getElementById('price-image').alt=w().priceAlt;
+    const priceImage=document.getElementById('price-image');
+    priceImage.setAttribute('src',pricePoster());
+    priceImage.alt=w().priceAlt;
     document.querySelector('.preview-button').setAttribute('aria-label',w().gallery);
     document.querySelector('.preview-button img').alt=w().demo;
     document.querySelector('.poster-preview').setAttribute('aria-label',w().priceOpen);
@@ -41,7 +44,8 @@
     const s=w();dialog.dataset.kind=target.kind;
     if(target.kind==='price'){
       document.getElementById('dialog-title').textContent=s.priceTitle;
-      body.innerHTML=`<img class="poster-full" src="./license-price-list.jpg" alt="${escape(s.priceAlt)}" width="853" height="1280"><p class="dialog-caption">${escape(s.posterTerms)}</p><a class="quiet-link" href="./license-price-list.jpg" target="_blank" rel="noopener noreferrer">${escape(s.fullImage)} ↗</a>`;
+      const poster=pricePoster();
+      body.innerHTML=`<img class="poster-full" src="${poster}" alt="${escape(s.priceAlt)}" width="1024" height="1536"><p class="dialog-caption">${escape(s.posterTerms)}</p><a class="quiet-link" href="${poster}" target="_blank" rel="noopener noreferrer">${escape(s.fullImage)} ↗</a>`;
     }else if(target.kind==='preview'){
       document.getElementById('dialog-title').textContent=`${apps[0].name} · v${apps[0].version}`;
       body.innerHTML=`<img class="dialog-image" src="./assets/eagle-preview-v110.png" width="1472" height="210" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
