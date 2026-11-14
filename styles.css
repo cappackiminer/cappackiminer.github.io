@@ -62,3 +62,11 @@ dialog{position:fixed;width:min(1000px,calc(100vw - 32px));max-height:calc(100dv
 @media(max-width:850px){.license-help{flex-wrap:wrap}.license-help-actions{flex-direction:row;width:100%;justify-content:flex-end}.license-help-copy{flex-basis:calc(100% - 80px)}}
 @media(max-width:560px){.license-help{padding:23px;margin-block:0 38px;gap:17px}.license-help-mark{width:42px;height:50px;border-radius:10px}.license-help-mark svg{width:31px;height:31px}.license-help-copy{flex-basis:calc(100% - 59px)}.license-help h2{font-size:21px}.license-help .eyebrow{font-size:9px}.license-help p{font-size:14px;line-height:1.7}.license-help-actions{align-items:stretch;flex-direction:column;gap:15px}.license-help-actions .quiet-link{justify-content:center}.footer-links{flex-wrap:wrap;gap:16px 25px}}
 @media(max-width:360px){.nav{gap:10px}.language-wrap select{max-width:110px}}
+
+.eagle-guide{scroll-margin-top:110px}
+.eagle-guide-downloads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;flex:0 1 540px;margin:0;padding:0;list-style:none}
+.eagle-guide-downloads a{display:flex;justify-content:space-between;align-items:center;gap:8px;height:100%;padding:10px 12px;border:1px solid #d2b57855;border-radius:9px;background:#0a1b22;color:#eef4ef;font-size:13px}
+.eagle-guide-downloads a:hover,.eagle-guide-downloads a:focus-visible{border-color:var(--gold);color:var(--gold)}
+.eagle-guide-downloads small{color:var(--gold);white-space:nowrap;font-size:10px}
+@media(max-width:850px){.eagle-guide-downloads{flex-basis:100%}}
+@media(max-width:600px){.eagle-guide-downloads{grid-template-columns:repeat(2,minmax(0,1fr))}}
