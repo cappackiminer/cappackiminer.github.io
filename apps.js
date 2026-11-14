@@ -5,7 +5,7 @@ window.CAPPA_APPS = [
     "platform": "windows",
     "os": "Windows · x64",
     "version": "1.1.3",
-    "file": "CAPPA-Eagle-v1.1.3-x64-Setup.exe",
+    "file": "CAPPA-Eagle-v1.1.3-PcBackup-x64-Setup.exe",
     "icon": "eagle-windows-v110.png",
     "search": "eagle CAPPA Eagle Windows windows x64"
   },
