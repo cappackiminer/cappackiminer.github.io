@@ -14,8 +14,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle Android",
     "platform": "android",
     "os": "Android 7+ · ARM 32/64-bit",
-    "version": "1.0.95 · 6000031",
-    "file": "CAPPA-Eagle-v1.0.95-Android-6000031-LicenseCache-Universal.apk",
+    "version": "1.0.96 · 6000032",
+    "file": "CAPPA-Eagle-v1.0.96-Android-6000032-Universal.apk",
     "icon": "eagle-android-6000029.png",
     "search": "android apk mobile armv7 arm64 mining"
   },
