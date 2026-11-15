@@ -4,8 +4,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.1.7",
-    "file": "CAPPA-Eagle-v1.1.7-x64-Setup.exe",
+    "version": "1.1.9",
+    "file": "CAPPA-Eagle-v1.1.9-x64-Setup.exe",
     "icon": "eagle-windows-v110.png",
     "search": "eagle CAPPA Eagle Windows windows x64"
   },
@@ -14,8 +14,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle Android",
     "platform": "android",
     "os": "Android 7+ · ARM 32/64-bit",
-    "version": "1.0.96 · 6000032",
-    "file": "CAPPA-Eagle-v1.0.96-Android-6000032-Universal.apk",
+    "version": "1.0.96 · 6000034",
+    "file": "CAPPA-Eagle-v1.0.96-Android-6000034-Universal.apk",
     "icon": "eagle-android-6000029.png",
     "search": "android apk mobile armv7 arm64 mining"
   },
