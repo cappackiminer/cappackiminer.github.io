@@ -36,7 +36,7 @@
     document.querySelector('.preview-button img').alt=w().demo;
     document.querySelector('.poster-preview').setAttribute('aria-label',w().priceOpen);
     document.querySelector('.close-dialog').setAttribute('aria-label',w().close);
-    document.title='CAPPA Eagle v'+(window.CAPPA_APPS.find(app=>app.id==='miner')?.version ?? '1.1.5');
+    document.title='CAPPA Eagle v'+(window.CAPPA_APPS.find(app=>app.id==='miner')?.version ?? '1.1.6');
     document.querySelector('meta[name=description]').content=w().heroCopy;
     if(dialog.open&&modal)renderModal(modal);updateLicenseHelp();filterCards();
   }

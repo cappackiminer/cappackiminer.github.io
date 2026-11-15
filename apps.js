@@ -4,8 +4,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.1.5",
-    "file": "CAPPA-Eagle-v1.1.5-x64-Setup.exe",
+    "version": "1.1.6",
+    "file": "CAPPA-Eagle-v1.1.6-x64-Setup.exe",
     "icon": "eagle-windows-v110.png",
     "search": "eagle CAPPA Eagle Windows windows x64"
   },
