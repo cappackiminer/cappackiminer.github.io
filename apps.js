@@ -4,8 +4,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Eagle",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.1.9",
-    "file": "CAPPA-Eagle-v1.1.9-x64-Setup.exe",
+    "version": "1.1.12",
+    "file": "CAPPA-Eagle-v1.1.12-GPU-x64-Setup.exe",
     "icon": "eagle-windows-v110.png",
     "search": "eagle CAPPA Eagle Windows windows x64"
   },
@@ -24,8 +24,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Boost",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.20",
-    "file": "CAPPA-Boost-v1.0.20-x64-Setup.exe",
+    "version": "1.0.21",
+    "file": "CAPPA-Boost-v1.0.21-x64-Setup.exe",
     "icon": "cappa-boost.png",
     "search": "CAPPA Boost Windows x64 Acki Nacki Farm MamaBoard"
   },
