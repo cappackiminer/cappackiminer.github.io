@@ -72,7 +72,8 @@ window.CAPPA_TEXT = {
     "licenseOpen": "Lisans rehberini aç",
     "licensePdf": "PDF indir",
     "android": "Android 7 ve üzeri için CAPPA Eagle. 32 ve 64 bit ARM desteği ve cüzdan adına lisanslama.",
-    "apk": "APK indir"
+    "apk": "APK indir",
+    "androidFlash": "Varsayılan 0 sn TAP aralığı. Menüden 0 veya 1 sn seçilebilir. Desteklenen cihazlarda GPU ile Hard TAP hesabı."
   },
   "en": {
     "language": "Language",
@@ -147,7 +148,8 @@ window.CAPPA_TEXT = {
     "licenseOpen": "Open license guide",
     "licensePdf": "Download PDF",
     "android": "CAPPA Eagle for Android 7 and later. Supports 32-bit and 64-bit ARM and licensing by wallet name.",
-    "apk": "Download APK"
+    "apk": "Download APK",
+    "androidFlash": "Choose a TAP interval of 0 or 1 second. The default is 0. Supported devices can use the GPU for Hard TAP computation."
   },
   "ru": {
     "language": "Язык",
@@ -222,7 +224,8 @@ window.CAPPA_TEXT = {
     "licenseOpen": "Открыть руководство",
     "licensePdf": "Скачать PDF",
     "android": "CAPPA Eagle для Android 7 и новее. Поддержка 32- и 64-битных ARM и лицензии по имени кошелька.",
-    "apk": "Скачать APK"
+    "apk": "Скачать APK",
+    "androidFlash": "Можно выбрать интервал TAP 0 или 1 с. Значение по умолчанию — 0 с. На совместимых устройствах Hard TAP можно вычислять на GPU."
   },
   "ar": {
     "language": "اللغة",
@@ -297,7 +300,8 @@ window.CAPPA_TEXT = {
     "licenseOpen": "افتح دليل الترخيص",
     "licensePdf": "نزّل PDF",
     "android": "CAPPA Eagle لنظام Android 7 والإصدارات الأحدث. دعم ARM بمعمارية 32 و64 بت، وترخيص باسم المحفظة.",
-    "apk": "تنزيل APK"
+    "apk": "تنزيل APK",
+    "androidFlash": "يمكن اختيار فاصل TAP قدره صفر أو ثانية واحدة. القيمة الافتراضية صفر. تتوفّر إمكانية حساب Hard TAP على GPU في الأجهزة المدعومة."
   },
   "zh": {
     "language": "语言",
@@ -372,7 +376,8 @@ window.CAPPA_TEXT = {
     "licenseOpen": "打开许可指南",
     "licensePdf": "下载 PDF",
     "android": "适用于 Android 7 及更高版本的 CAPPA Eagle。支持 32 位及 64 位 ARM和按钱包名称授权。",
-    "apk": "下载 APK"
+    "apk": "下载 APK",
+    "androidFlash": "TAP 间隔可选 0 秒或 1 秒，默认为 0 秒。受支持的设备可使用 GPU 计算 Hard TAP。"
   },
   "id": {
     "language": "Bahasa",
@@ -447,6 +452,7 @@ window.CAPPA_TEXT = {
     "licenseOpen": "Buka panduan lisensi",
     "licensePdf": "Unduh PDF",
     "android": "CAPPA Eagle untuk Android 7 dan yang lebih baru. Mendukung ARM 32-bit dan 64-bit, dan lisensi berdasarkan nama dompet.",
-    "apk": "Unduh APK"
+    "apk": "Unduh APK",
+    "androidFlash": "Pilih interval TAP 0 atau 1 detik. Nilai bawaan 0 detik. Perangkat yang didukung dapat menghitung Hard TAP dengan GPU."
   }
 };

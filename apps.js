@@ -10,6 +10,16 @@ window.CAPPA_APPS = [
     "search": "flash eagle CAPPA Flash Windows windows x64"
   },
   {
+    "id": "androidFlash",
+    "name": "CAPPA Flash Android",
+    "platform": "android",
+    "os": "Android 7+ · ARM 32/64-bit",
+    "version": "1.0.96 · 6000037",
+    "file": "CAPPA-Flash-v1.0.96-Android-6000037-Universal.apk",
+    "icon": "cappa-flash-android.svg",
+    "search": "CAPPA Flash Android apk mobile armv7 arm64 mining GPU TAP 6000037"
+  },
+  {
     "id": "android",
     "name": "CAPPA Eagle Android",
     "platform": "android",

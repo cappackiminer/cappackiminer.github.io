@@ -13,6 +13,6 @@ License help is published at `/help/license/`; the site carries its selected lan
 CAPPA Flash Windows: 1–3 engines, 0 s or 1 s TAP intervals, OpenCL Hard TAP acceleration, on-chain PROOF result recovery, and wallet-name licensing with signed license-file import. Automatic checkout covers up to 200 wallets per invoice.
 The home page shows the CAPPA Flash header with sample data.
 
-Current Android release: CAPPA Eagle 1.0.96, build 6000034, universal ARM APK for Android 7 and later. The computation window is 155 seconds.
+Android downloads include CAPPA Flash 1.0.96 (build 6000037) and CAPPA Eagle 1.0.96 (build 6000034). Both are universal ARM APKs for Android 7 and later. Flash offers 0/1 s TAP intervals (default 0 s) and optional Vulkan GPU acceleration for Hard TAP.
 
 The current CAPPA Flash Windows user guide is at /help/flash/, with a PDF for each supported language.
