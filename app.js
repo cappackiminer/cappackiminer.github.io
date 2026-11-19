@@ -16,7 +16,7 @@
   const licenseHelpUrl=()=>`./help/license/#${lang}`;
   function updateLicenseHelp(){
     document.querySelectorAll('[data-license-help]').forEach(link=>link.href=licenseHelpUrl());
-    document.querySelectorAll('[data-license-pdf]').forEach(link=>link.href='./help/license/'+licensePdfs[lang]);
+    document.querySelectorAll('[data-license-pdf]').forEach(link=>link.href='./help/license/'+licensePdfs[lang]+'?v=flash-1203');
   }
   function filterCards(){
     const term=search.value.trim().toLocaleLowerCase(lang);let shown=0;

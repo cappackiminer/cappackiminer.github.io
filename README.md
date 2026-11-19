@@ -10,7 +10,9 @@ Current CAPPA Boost release: v1.0.21 for Windows x64.
 
 License help is published at `/help/license/`; the site carries its selected language in the URL fragment. The guide is self-contained and the six matching PDFs can also be downloaded from that directory.
 
-CAPPA Flash Windows: unlimited saved wallets and public reads; automatic purchase selection 1–200; verified manual-license renewal import; daily epoch pause 2–12 hours/local time; engine selection 1–3.
+CAPPA Flash Windows: 1–3 engines, 0 s or 1 s TAP intervals, OpenCL Hard TAP acceleration, on-chain PROOF result recovery, and wallet-name licensing with signed license-file import. Automatic checkout covers up to 200 wallets per invoice.
 The home page shows the CAPPA Flash header with sample data.
 
 Current Android release: CAPPA Eagle 1.0.96, build 6000034, universal ARM APK for Android 7 and later. The computation window is 155 seconds.
+
+The current CAPPA Flash Windows user guide is at /help/flash/, with a PDF for each supported language.
