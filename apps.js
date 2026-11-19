@@ -34,8 +34,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Boost",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.0.21",
-    "file": "CAPPA-Boost-v1.0.21-x64-Setup.exe",
+    "version": "1.0.23",
+    "file": "CAPPA-Boost-v1.0.23-x64-Setup.exe",
     "icon": "cappa-boost.png",
     "search": "CAPPA Boost Windows x64 Acki Nacki Farm MamaBoard"
   },
