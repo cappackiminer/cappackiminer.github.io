@@ -17,7 +17,7 @@ window.CAPPA_APPS = [
     "version": "1.0.96 · 6000037",
     "file": "CAPPA-Flash-v1.0.96-Android-6000037-Universal.apk",
     "icon": "cappa-flash-android.svg",
-    "search": "CAPPA Flash Android apk mobile armv7 arm64 mining GPU TAP 6000037"
+    "search": "CAPPA Flash Android apk mobile armv7 arm64 mining TAP 6000037"
   },
   {
     "id": "android",
