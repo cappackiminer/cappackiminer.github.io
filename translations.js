@@ -27,6 +27,7 @@ window.CAPPA_TEXT = {
     "search": "Uygulama ara…",
     "miner": "Windows x64 için 1–3 motor, 0 veya 1 sn TAP aralığı, GPU ile Hard TAP ve imzalı lisans dosyası desteği.",
     "boost": "Bağlı Acki Nacki cüzdanlarında günlük Boost ödüllerini otomatik toplar. Beş döngüyü, Farm ve MamaBoard seviyelerini ve sıradaki yükseltme için gereken Boost’u cüzdan bazında gösterir. Windows oturumu açıldığında sistem tepsisinde başlar. Otomatik toplama ve MamaBoard alımı için cüzdanın etkin CAPPA Eagle lisansı bir kez doğrulanır.",
+    "boostCard": "Günlük Boost ödüllerini otomatik toplar, Farm ve MamaBoard seviyelerini gösterir.",
     "boostMaintenance": "Bakımda",
     "boostUnavailable": "İndirme geçici olarak kapalı.",
     "boostQr": "Cüzdanı QR koduyla bağla.",
@@ -73,7 +74,7 @@ window.CAPPA_TEXT = {
     "licensePdf": "PDF indir",
     "android": "Android 7 ve üzeri için CAPPA Eagle. 32 ve 64 bit ARM desteği ve cüzdan adına lisanslama.",
     "apk": "APK indir",
-    "androidFlash": "Varsayılan 0 sn TAP aralığı. Menüden 0 veya 1 sn seçilebilir. Desteklenen cihazlarda GPU ile Hard TAP hesabı."
+    "androidFlash": "Varsayılan 0 sn TAP aralığı. Menüden 0 veya 1 sn seçilebilir."
   },
   "en": {
     "language": "Language",
@@ -103,6 +104,7 @@ window.CAPPA_TEXT = {
     "search": "Search apps…",
     "miner": "Windows x64 with 1–3 engines, 0 or 1 s TAP intervals, GPU Hard TAP, and signed license-file import.",
     "boost": "Automatically collects daily Boost rewards for connected Acki Nacki wallets. For each wallet, it shows the five cycles, Farm and MamaBoard levels, and the Boost required for the next upgrade. It starts in the system tray when you sign in to Windows. An active CAPPA Eagle license is verified once per wallet for automatic collection and MamaBoard purchases.",
+    "boostCard": "Automatically collects daily Boost rewards and tracks Farm and MamaBoard levels.",
     "boostMaintenance": "Under maintenance",
     "boostUnavailable": "Downloads are temporarily unavailable.",
     "boostQr": "Connect your wallet with a QR code.",
@@ -149,7 +151,7 @@ window.CAPPA_TEXT = {
     "licensePdf": "Download PDF",
     "android": "CAPPA Eagle for Android 7 and later. Supports 32-bit and 64-bit ARM and licensing by wallet name.",
     "apk": "Download APK",
-    "androidFlash": "Choose a TAP interval of 0 or 1 second. The default is 0. Supported devices can use the GPU for Hard TAP computation."
+    "androidFlash": "Choose a TAP interval of 0 or 1 second. The default is 0."
   },
   "ru": {
     "language": "Язык",
@@ -179,6 +181,7 @@ window.CAPPA_TEXT = {
     "search": "Поиск приложений…",
     "miner": "Windows x64, 1–3 движка, интервал TAP 0 или 1 с, расчёт Hard TAP на GPU и импорт подписанного файла лицензии.",
     "boost": "Автоматически собирает ежедневные награды Boost для подключённых кошельков Acki Nacki. Для каждого кошелька показывает пять циклов, уровни Farm и MamaBoard и количество Boost, необходимое для следующего улучшения. Запускается в области уведомлений при входе в Windows. Для автоматического сбора и покупки MamaBoard действующая лицензия CAPPA Eagle проверяется один раз для каждого кошелька.",
+    "boostCard": "Автоматически собирает ежедневные награды Boost и показывает уровни Farm и MamaBoard.",
     "boostMaintenance": "На обслуживании",
     "boostUnavailable": "Скачивание временно недоступно.",
     "boostQr": "Подключите кошелёк с помощью QR-кода.",
@@ -225,7 +228,7 @@ window.CAPPA_TEXT = {
     "licensePdf": "Скачать PDF",
     "android": "CAPPA Eagle для Android 7 и новее. Поддержка 32- и 64-битных ARM и лицензии по имени кошелька.",
     "apk": "Скачать APK",
-    "androidFlash": "Можно выбрать интервал TAP 0 или 1 с. Значение по умолчанию — 0 с. На совместимых устройствах Hard TAP можно вычислять на GPU."
+    "androidFlash": "Можно выбрать интервал TAP 0 или 1 с. Значение по умолчанию — 0 с."
   },
   "ar": {
     "language": "اللغة",
@@ -255,6 +258,7 @@ window.CAPPA_TEXT = {
     "search": "ابحث عن تطبيق…",
     "miner": "لنظام Windows x64 مع 1 إلى 3 محركات، وفاصل TAP قدره 0 أو 1 ثانية، وحساب Hard TAP على GPU واستيراد ملف ترخيص موقّع.",
     "boost": "يجمع مكافآت Boost اليومية تلقائيًا للمحافظ المرتبطة على شبكة Acki Nacki. يعرض لكل محفظة الدورات الخمس ومستويَي Farm وMamaBoard ومقدار Boost المطلوب للترقية التالية. يبدأ التشغيل في منطقة الإعلام عند تسجيل الدخول إلى Windows. يُتحقَّق من ترخيص CAPPA Eagle سارٍ مرة واحدة لكل محفظة لتفعيل الجمع التلقائي وشراء MamaBoard.",
+    "boostCard": "يجمع مكافآت Boost اليومية تلقائيًا ويعرض مستويَي Farm وMamaBoard.",
     "boostMaintenance": "قيد الصيانة",
     "boostUnavailable": "التنزيل غير متاح مؤقتًا.",
     "boostQr": "اربط محفظتك باستخدام رمز QR.",
@@ -301,7 +305,7 @@ window.CAPPA_TEXT = {
     "licensePdf": "نزّل PDF",
     "android": "CAPPA Eagle لنظام Android 7 والإصدارات الأحدث. دعم ARM بمعمارية 32 و64 بت، وترخيص باسم المحفظة.",
     "apk": "تنزيل APK",
-    "androidFlash": "يمكن اختيار فاصل TAP قدره صفر أو ثانية واحدة. القيمة الافتراضية صفر. تتوفّر إمكانية حساب Hard TAP على GPU في الأجهزة المدعومة."
+    "androidFlash": "يمكن اختيار فاصل TAP قدره صفر أو ثانية واحدة. القيمة الافتراضية صفر."
   },
   "zh": {
     "language": "语言",
@@ -331,6 +335,7 @@ window.CAPPA_TEXT = {
     "search": "搜索应用…",
     "miner": "Windows x64 版支持 1–3 个引擎、0 或 1 秒 TAP 间隔、GPU Hard TAP 计算和导入已签名的许可文件。",
     "boost": "自动为已连接的 Acki Nacki 钱包领取每日 Boost 奖励。按钱包显示五个周期、Farm 和 MamaBoard 等级，以及下次升级所需的 Boost。登录 Windows 后在系统托盘中启动。启用自动领取和购买 MamaBoard 前，每个钱包只需验证一次有效的 CAPPA Eagle 许可证。",
+    "boostCard": "自动领取每日 Boost 奖励，并显示 Farm 和 MamaBoard 等级。",
     "boostMaintenance": "维护中",
     "boostUnavailable": "暂时无法下载。",
     "boostQr": "扫描二维码连接钱包。",
@@ -377,7 +382,7 @@ window.CAPPA_TEXT = {
     "licensePdf": "下载 PDF",
     "android": "适用于 Android 7 及更高版本的 CAPPA Eagle。支持 32 位及 64 位 ARM和按钱包名称授权。",
     "apk": "下载 APK",
-    "androidFlash": "TAP 间隔可选 0 秒或 1 秒，默认为 0 秒。受支持的设备可使用 GPU 计算 Hard TAP。"
+    "androidFlash": "TAP 间隔可选 0 秒或 1 秒，默认为 0 秒。"
   },
   "id": {
     "language": "Bahasa",
@@ -407,6 +412,7 @@ window.CAPPA_TEXT = {
     "search": "Cari aplikasi…",
     "miner": "Windows x64 dengan 1–3 mesin, interval TAP 0 atau 1 detik, Hard TAP pada GPU, dan impor berkas lisensi bertanda tangan.",
     "boost": "Mengumpulkan hadiah Boost harian secara otomatis untuk dompet Acki Nacki yang terhubung. Menampilkan lima siklus, level Farm dan MamaBoard, serta Boost yang diperlukan untuk peningkatan berikutnya pada setiap dompet. Aplikasi berjalan di baki sistem saat Anda masuk ke Windows. Lisensi CAPPA Eagle yang aktif diverifikasi satu kali per dompet untuk mengaktifkan pengumpulan otomatis dan pembelian MamaBoard.",
+    "boostCard": "Mengumpulkan hadiah Boost harian secara otomatis dan menampilkan level Farm dan MamaBoard.",
     "boostMaintenance": "Dalam pemeliharaan",
     "boostUnavailable": "Unduhan sementara tidak tersedia.",
     "boostQr": "Hubungkan dompet dengan kode QR.",
@@ -453,6 +459,6 @@ window.CAPPA_TEXT = {
     "licensePdf": "Unduh PDF",
     "android": "CAPPA Eagle untuk Android 7 dan yang lebih baru. Mendukung ARM 32-bit dan 64-bit, dan lisensi berdasarkan nama dompet.",
     "apk": "Unduh APK",
-    "androidFlash": "Pilih interval TAP 0 atau 1 detik. Nilai bawaan 0 detik. Perangkat yang didukung dapat menghitung Hard TAP dengan GPU."
+    "androidFlash": "Pilih interval TAP 0 atau 1 detik. Nilai bawaan 0 detik."
   }
 };
