@@ -12,7 +12,7 @@
   if(!Object.hasOwn(dictionaries,lang))lang='tr';
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const w=()=>dictionaries[lang];
-  const pricePoster=()=>lang==='tr'?'./assets/eagle-license-prices-tr.png':'./assets/eagle-license-prices-en.png';
+  const pricePoster=()=>lang==='tr'?'./assets/eagle-license-prices-tr.png?v=flash-20261126':'./assets/eagle-license-prices-en.png?v=flash-20261126';
   const licenseHelpUrl=()=>`./help/license/#${lang}`;
   function updateLicenseHelp(){
     document.querySelectorAll('[data-license-help]').forEach(link=>link.href=licenseHelpUrl());
