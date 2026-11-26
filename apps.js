@@ -20,16 +20,6 @@ window.CAPPA_APPS = [
     "search": "CAPPA Flash Android apk mobile armv7 arm64 mining TAP 6000037"
   },
   {
-    "id": "android",
-    "name": "CAPPA Eagle Android",
-    "platform": "android",
-    "os": "Android 7+ · ARM 32/64-bit",
-    "version": "1.0.96 · 6000034",
-    "file": "CAPPA-Eagle-v1.0.96-Android-6000034-Universal.apk",
-    "icon": "eagle-android-6000029.png",
-    "search": "android apk mobile armv7 arm64 mining"
-  },
-  {
     "id": "boost",
     "name": "CAPPA Boost",
     "platform": "windows",

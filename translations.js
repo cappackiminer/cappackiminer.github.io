@@ -72,7 +72,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "Cüzdan adına lisans alma, NACKL veya SHELL ile ödeme ve Windows’ta imzalı .cappalicense dosyasını yükleme.",
     "licenseOpen": "Lisans rehberini aç",
     "licensePdf": "PDF indir",
-    "android": "Android 7 ve üzeri için CAPPA Eagle. 32 ve 64 bit ARM desteği ve cüzdan adına lisanslama.",
     "apk": "APK indir",
     "androidFlash": "Varsayılan 0 sn TAP aralığı. Menüden 0 veya 1 sn seçilebilir."
   },
@@ -149,7 +148,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "License wallets by name, pay with NACKL or SHELL, and import a signed .cappalicense file on Windows.",
     "licenseOpen": "Open license guide",
     "licensePdf": "Download PDF",
-    "android": "CAPPA Eagle for Android 7 and later. Supports 32-bit and 64-bit ARM and licensing by wallet name.",
     "apk": "Download APK",
     "androidFlash": "Choose a TAP interval of 0 or 1 second. The default is 0."
   },
@@ -226,7 +224,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "Лицензирование по имени кошелька, оплата в NACKL или SHELL и импорт подписанного файла .cappalicense в Windows.",
     "licenseOpen": "Открыть руководство",
     "licensePdf": "Скачать PDF",
-    "android": "CAPPA Eagle для Android 7 и новее. Поддержка 32- и 64-битных ARM и лицензии по имени кошелька.",
     "apk": "Скачать APK",
     "androidFlash": "Можно выбрать интервал TAP 0 или 1 с. Значение по умолчанию — 0 с."
   },
@@ -303,7 +300,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "ترخيص المحافظ بالاسم، والدفع بعملة NACKL أو SHELL، واستيراد ملف .cappalicense موقّع على Windows.",
     "licenseOpen": "افتح دليل الترخيص",
     "licensePdf": "نزّل PDF",
-    "android": "CAPPA Eagle لنظام Android 7 والإصدارات الأحدث. دعم ARM بمعمارية 32 و64 بت، وترخيص باسم المحفظة.",
     "apk": "تنزيل APK",
     "androidFlash": "يمكن اختيار فاصل TAP قدره صفر أو ثانية واحدة. القيمة الافتراضية صفر."
   },
@@ -380,7 +376,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "按钱包名称授权，使用 NACKL 或 SHELL 付款，并在 Windows 上导入已签名的 .cappalicense 文件。",
     "licenseOpen": "打开许可指南",
     "licensePdf": "下载 PDF",
-    "android": "适用于 Android 7 及更高版本的 CAPPA Eagle。支持 32 位及 64 位 ARM和按钱包名称授权。",
     "apk": "下载 APK",
     "androidFlash": "TAP 间隔可选 0 秒或 1 秒，默认为 0 秒。"
   },
@@ -457,7 +452,6 @@ window.CAPPA_TEXT = {
     "licenseCopy": "Lisensikan dompet berdasarkan nama, bayar dengan NACKL atau SHELL, dan impor berkas .cappalicense bertanda tangan di Windows.",
     "licenseOpen": "Buka panduan lisensi",
     "licensePdf": "Unduh PDF",
-    "android": "CAPPA Eagle untuk Android 7 dan yang lebih baru. Mendukung ARM 32-bit dan 64-bit, dan lisensi berdasarkan nama dompet.",
     "apk": "Unduh APK",
     "androidFlash": "Pilih interval TAP 0 atau 1 detik. Nilai bawaan 0 detik."
   }
