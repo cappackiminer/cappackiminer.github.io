@@ -4,7 +4,7 @@ Static multilingual download catalogue for CAPPA applications. The site links to
 
 Languages: Turkish, English, Russian, Arabic, Simplified Chinese, and Indonesian.
 
-Current Windows release: CAPPA Flash v1.2.08.
+Current Windows release: CAPPA Flash v1.2.09.
 
 Current CAPPA Boost release: v1.0.27 for Windows x64.
 
