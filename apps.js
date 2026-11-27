@@ -25,7 +25,7 @@ window.CAPPA_APPS = [
     "platform": "windows",
     "os": "Windows · x64",
     "version": "1.0.27",
-    "file": "CAPPA-Boost-v1.0.27-x64-Setup.exe",
+    "file": "CAPPA-Boost-v1.0.27-Sabit-Ust-Panel-x64-Setup.exe",
     "icon": "cappa-boost.png",
     "search": "CAPPA Boost Windows x64 Acki Nacki Farm MamaBoard"
   },
