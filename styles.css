@@ -103,6 +103,3 @@ dialog[data-kind=price] .dialog-caption {
 }
 
 .flash-preview-image{clip-path:polygon(evenodd,0 0,100% 0,100% 100%,0 100%,0 0,80.35% 10%,80.35% 30.25%,83.45% 30.25%,83.45% 10%,80.35% 10%,0 0)}
-
-.cloud-mining .cloud-terms{margin-top:9px;color:#aec4b9;font-size:13px}.cloud-mining .license-help-actions .button{text-align:center}.cloud-mining .license-help-copy h2{margin-top:0}
-@media(max-width:850px){.cloud-mining .license-help-copy{flex-basis:100%}}

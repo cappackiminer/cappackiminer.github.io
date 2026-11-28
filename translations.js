@@ -1,10 +1,5 @@
 window.CAPPA_TEXT = {
   "tr": {
-    "cloudCopy": "Cüzdanını bilgisayarda QR koduyla veya telefonda AN Wallet bağlantısıyla bağla. Tek siparişte en fazla 10 cüzdanı tek faturayla ekleyebilirsin.",
-    "cloudTerms": "Cüzdan izinleri doğrulanınca fatura NACKL veya SHELL olarak hazırlanır. MB 30’un altındaki cüzdanlara MB 30 tarifesi uygulanır.",
-    "cloudOpen": "Madencilik siparişi oluştur",
-    "cloudTracking": "Cüzdan ve sipariş takibi",
-    "cloudRequirement": "Barındırılan madencilik için etkin bir CAPPA Flash lisansı gerekir. Ödeme zincirde onaylandıktan sonra sipariş başlatma sırasına alınır.",
     "language": "Dil",
     "navApps": "Uygulamalar",
     "navDownloads": "İndirme bilgisi",
@@ -81,11 +76,6 @@ window.CAPPA_TEXT = {
     "androidFlash": "Varsayılan 0 sn TAP aralığı. Menüden 0 veya 1 sn seçilebilir."
   },
   "en": {
-    "cloudCopy": "Connect your wallet by scanning a QR code on desktop or opening the AN Wallet link on your phone. You can include up to 10 wallets on one order and invoice.",
-    "cloudTerms": "Your NACKL or SHELL invoice appears once wallet permissions are verified. Wallets below MB 30 use the MB 30 rate.",
-    "cloudOpen": "Start a mining order",
-    "cloudTracking": "Track a wallet or order",
-    "cloudRequirement": "Hosted mining requires an active CAPPA Flash license. The order is queued to start after payment is confirmed on-chain.",
     "language": "Language",
     "navApps": "Apps",
     "navDownloads": "Download info",
@@ -162,11 +152,6 @@ window.CAPPA_TEXT = {
     "androidFlash": "Choose a TAP interval of 0 or 1 second. The default is 0."
   },
   "ru": {
-    "cloudCopy": "Подключите кошелёк с помощью QR-кода на компьютере или откройте ссылку AN Wallet на телефоне. В одном заказе и счёте может быть до 10 кошельков.",
-    "cloudTerms": "После проверки разрешений кошельков появится счёт в NACKL или SHELL. Для кошельков ниже MB 30 действует тариф MB 30.",
-    "cloudOpen": "Оформить заказ на майнинг",
-    "cloudTracking": "Отслеживание кошелька и заказа",
-    "cloudRequirement": "Для облачного майнинга нужна действующая лицензия CAPPA Flash. Заказ будет поставлен в очередь после подтверждения оплаты в блокчейне.",
     "language": "Язык",
     "navApps": "Приложения",
     "navDownloads": "Информация о загрузке",
@@ -243,11 +228,6 @@ window.CAPPA_TEXT = {
     "androidFlash": "Можно выбрать интервал TAP 0 или 1 с. Значение по умолчанию — 0 с."
   },
   "ar": {
-    "cloudCopy": "اربط محفظتك بمسح رمز QR على الكمبيوتر أو بفتح رابط AN Wallet على الهاتف. يمكنك إضافة ما يصل إلى 10 محافظ في طلب واحد وفاتورة واحدة.",
-    "cloudTerms": "تظهر فاتورتك بعملة NACKL أو SHELL بعد التحقق من أذونات المحافظ. يُطبَّق سعر MB 30 على المحافظ ذات المستوى الأدنى.",
-    "cloudOpen": "أنشئ طلب تعدين",
-    "cloudTracking": "تابع محفظة أو طلبًا",
-    "cloudRequirement": "يتطلب التعدين المستضاف ترخيص CAPPA Flash ساريًا. يُضاف الطلب إلى قائمة انتظار البدء بعد تأكيد الدفع على الشبكة.",
     "language": "اللغة",
     "navApps": "التطبيقات",
     "navDownloads": "معلومات التنزيل",
@@ -324,11 +304,6 @@ window.CAPPA_TEXT = {
     "androidFlash": "يمكن اختيار فاصل TAP قدره صفر أو ثانية واحدة. القيمة الافتراضية صفر."
   },
   "zh": {
-    "cloudCopy": "在电脑上扫描二维码，或在手机上打开 AN Wallet 链接来连接钱包。每笔订单最多可包含 10 个钱包，并合用一张账单。",
-    "cloudTerms": "钱包授权通过验证后，将生成 NACKL 或 SHELL 账单。低于 MB 30 的钱包按 MB 30 费率计费。",
-    "cloudOpen": "创建挖矿订单",
-    "cloudTracking": "查看钱包与订单",
-    "cloudRequirement": "托管挖矿需要有效的 CAPPA Flash 许可证。付款通过链上确认后，订单将进入启动队列。",
     "language": "语言",
     "navApps": "应用",
     "navDownloads": "下载信息",
@@ -405,11 +380,6 @@ window.CAPPA_TEXT = {
     "androidFlash": "TAP 间隔可选 0 秒或 1 秒，默认为 0 秒。"
   },
   "id": {
-    "cloudCopy": "Hubungkan dompet dengan memindai kode QR di komputer atau membuka tautan AN Wallet di ponsel. Satu pesanan dan satu tagihan dapat mencakup hingga 10 dompet.",
-    "cloudTerms": "Tagihan NACKL atau SHELL muncul setelah izin dompet diverifikasi. Dompet di bawah MB 30 menggunakan tarif MB 30.",
-    "cloudOpen": "Buat pesanan mining",
-    "cloudTracking": "Lacak dompet atau pesanan",
-    "cloudRequirement": "Mining terkelola memerlukan lisensi CAPPA Flash yang aktif. Pesanan masuk antrean setelah pembayaran dikonfirmasi di blockchain.",
     "language": "Bahasa",
     "navApps": "Aplikasi",
     "navDownloads": "Info unduhan",

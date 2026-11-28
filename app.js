@@ -18,24 +18,6 @@
     document.querySelectorAll('[data-license-help]').forEach(link=>link.href=licenseHelpUrl());
     document.querySelectorAll('[data-license-pdf]').forEach(link=>link.href='./help/license/'+licensePdfs[lang]+'?v=flash-1203');
   }
-  function updateCloudCheckout(){
-    const section=document.getElementById('cloud-mining');
-    let origin;
-    try{
-      const configured=new URL(section.dataset.cloudOrigin);
-      if(configured.protocol==='https:'&&!configured.username&&!configured.password&&
-        configured.pathname==='/'&&!configured.search&&!configured.hash) origin=configured.origin;
-    }catch{}
-    section.hidden=!origin;
-    document.querySelector('[data-cloud-nav]').hidden=!origin;
-    if(!origin)return;
-    section.querySelectorAll('[data-cloud-checkout]').forEach(link=>{
-      const url=new URL('/',origin);
-      url.searchParams.set('lang',lang);
-      if(link.dataset.cloudCheckout==='tracking')url.hash='takip';
-      link.href=url.href;
-    });
-  }
   function filterCards(){
     const term=search.value.trim().toLocaleLowerCase(lang);let shown=0;
     for(const card of cards){const yes=(platform==='all'||card.dataset.platform===platform)&&(!term||(card.textContent+' '+card.dataset.search).toLocaleLowerCase(lang).includes(term));card.hidden=!yes;if(yes)shown++;}
@@ -57,7 +39,7 @@
     const windowsMiner=apps.find(app=>app.id==='miner');
     if(windowsMiner)document.title=windowsMiner.name+' v'+windowsMiner.version;
     document.querySelector('meta[name=description]').content=w().heroCopy;
-    if(dialog.open&&modal)renderModal(modal);updateLicenseHelp();updateCloudCheckout();filterCards();
+    if(dialog.open&&modal)renderModal(modal);updateLicenseHelp();filterCards();
   }
   function renderModal(target){
     const s=w();dialog.dataset.kind=target.kind;
