@@ -1,13 +1,13 @@
 window.CAPPA_APPS = [
   {
     "id": "miner",
-    "name": "CAPPA Flash",
+    "name": "CAPPA IQ",
     "platform": "windows",
     "os": "Windows · x64",
     "version": "1.3.00",
-    "file": "CAPPA-Flash-v1.3.00-RewardGuard-AvgColor-x64-Setup.exe?build=9169f188",
+    "file": "CAPPA-IQ-v1.3.00-x64-Setup.exe?build=1c83df77",
     "icon": "eagle-windows-v110.png",
-    "search": "flash eagle CAPPA Flash Windows windows x64"
+    "search": "CAPPA IQ Flash Eagle Windows x64"
   },
   {
     "id": "androidFlash",
