@@ -8,6 +8,8 @@ Current Windows release: CAPPA IQ v1.3.00.
 
 Current CAPPA Boost release: v1.0.27 for Windows x64.
 
+CAPPA Mining Monitor v1.0.1 is a standalone Windows x64 app for current and archived epoch statistics. Its interface supports Turkish, English, Russian, and Indonesian. Setup installs WebView2 if needed.
+
 License help is published at `/help/license/`; the site carries its selected language in the URL fragment. The guide is self-contained and the six matching PDFs can also be downloaded from that directory.
 
 CAPPA IQ for Windows: 1–3 engines, 0 s or 1 s TAP intervals, on-chain PROOF result recovery, and wallet-name licensing with signed license-file import. Automatic checkout covers up to 200 wallets per invoice.

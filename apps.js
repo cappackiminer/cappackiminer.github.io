@@ -30,6 +30,16 @@ window.CAPPA_APPS = [
     "search": "CAPPA Boost Windows x64 Acki Nacki Farm MamaBoard"
   },
   {
+    "id": "miningMonitor",
+    "name": "CAPPA Mining Monitor",
+    "platform": "windows",
+    "os": "Windows · x64",
+    "version": "1.0.1",
+    "file": "CAPPA-Mining-Monitor-v1.0.1-x64-Setup.exe?build=b6196ddd",
+    "icon": "cappa-monitor-stats.png",
+    "search": "CAPPA Mining Monitor Windows x64 epoch reward statistics istatistik madencilik"
+  },
+  {
     "id": "epoch",
     "name": "Last Epoch",
     "platform": "windows",
