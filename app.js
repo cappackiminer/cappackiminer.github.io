@@ -12,6 +12,8 @@
   const select=document.getElementById('language-select'),search=document.getElementById('search');
   const cards=[...document.querySelectorAll('.app-card')],filters=[...document.querySelectorAll('.filter')];
   const dialog=document.getElementById('lightbox'),body=document.getElementById('dialog-body');
+  const cloudPriceButton=document.querySelector('[data-cloud-price]');
+  const cloudPriceHash='#cloud-prices';
   let lang='tr',platform='all',opener=null,modal=null;
   try{lang=localStorage.getItem('cappa-hub-language')||'tr';}catch{}
   if(!Object.hasOwn(dictionaries,lang))lang='tr';
@@ -105,18 +107,30 @@
     }
   }
   function openModal(target,button){modal=target;opener=button;renderModal(target);dialog.showModal();document.body.classList.add('modal-open');dialog.scrollTop=0;}
-  dialog.addEventListener('close',()=>{document.body.classList.remove('modal-open');modal=null;opener?.focus({preventScroll:true});});
+  dialog.addEventListener('close',()=>{
+    if(modal?.kind==='cloud-price'&&location.hash===cloudPriceHash) history.replaceState(history.state,'','#cloud-mining');
+    document.body.classList.remove('modal-open');modal=null;opener?.focus({preventScroll:true});
+  });
   document.querySelector('.close-dialog').addEventListener('click',()=>dialog.close());
   let backdropPointer=false;
   dialog.addEventListener('pointerdown',event=>{const r=dialog.getBoundingClientRect();backdropPointer=event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom;});
   dialog.addEventListener('click',event=>{if(event.target===dialog&&backdropPointer)dialog.close();backdropPointer=false;});
   document.querySelectorAll('[data-price]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'price'},b)));
-  const cloudPriceButton=document.querySelector('[data-cloud-price]');
   cloudPriceButton.addEventListener('click',()=>openModal({kind:'cloud-price'},cloudPriceButton));
+  function openLinkedCloudPrices(){
+    if(location.hash===cloudPriceHash&&!dialog.open&&!cloudPriceButton.closest('section').hidden){
+      openModal({kind:'cloud-price'},cloudPriceButton);
+    }
+  }
+  window.addEventListener('hashchange',event=>{
+    if(new URL(event.oldURL).hash===cloudPriceHash&&location.hash!==cloudPriceHash&&modal?.kind==='cloud-price')dialog.close();
+    openLinkedCloudPrices();
+  });
   document.querySelectorAll('[data-preview]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'preview'},b)));
   document.querySelectorAll('[data-app]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'app',id:b.dataset.app},b)));
   filters.forEach(button=>button.addEventListener('click',()=>{platform=button.dataset.filter;filters.forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});filterCards();}));
   search.addEventListener('input',filterCards);
   select.addEventListener('change',()=>{lang=select.value;try{localStorage.setItem('cappa-hub-language',lang);}catch{}translate();});
   translate();
+  openLinkedCloudPrices();
 })();
