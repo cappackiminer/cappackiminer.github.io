@@ -5,7 +5,7 @@ window.CAPPA_APPS = [
     "platform": "windows",
     "os": "Windows · x64",
     "version": "1.3.00",
-    "file": "CAPPA-IQ-v1.3.00-x64-Setup.exe?build=1c83df77",
+    "file": "CAPPA-IQ-v1.3.00-Last4h-x64-Setup.exe?build=65dda63d",
     "icon": "eagle-windows-v110.png",
     "search": "CAPPA IQ Flash Eagle Windows x64"
   },
