@@ -3,6 +3,11 @@
   const dictionaries=window.CAPPA_TEXT, apps=window.CAPPA_APPS;
   const release='https://github.com/cappackiminer/CappAckiMiner/releases/download/downloads-2026-10-18/';
   const releasePage='https://github.com/cappackiminer/CappAckiMiner/releases/tag/downloads-2026-10-18';
+  // 30-day public tariff from the Cloud Mining host's server/price.ts, in cents.
+  const cloudPriceMinimumLevel=30;
+  const cloudPriceMaximumLevel=72;
+  const cloudPriceMinimumNacklCents=37762;
+  const cloudPriceLevelStepCents=1918;
   const licensePdfs={tr:'CAPPA-Lisans-Rehberi-Turkce.pdf',en:'CAPPA-License-Guide-English.pdf',ru:'CAPPA-License-Guide-Russian.pdf',ar:'CAPPA-License-Guide-Arabic.pdf',zh:'CAPPA-License-Guide-Chinese.pdf',id:'CAPPA-License-Guide-Indonesian.pdf'};
   const select=document.getElementById('language-select'),search=document.getElementById('search');
   const cards=[...document.querySelectorAll('.app-card')],filters=[...document.querySelectorAll('.filter')];
@@ -59,12 +64,34 @@
     document.querySelector('meta[name=description]').content=w().heroCopy;
     if(dialog.open&&modal)renderModal(modal);updateLicenseHelp();updateCloudCheckout();filterCards();
   }
+  function renderCloudPrice(labels){
+    const numbers=new Intl.NumberFormat(lang);
+    const prices=new Intl.NumberFormat(lang,{minimumFractionDigits:2,maximumFractionDigits:2});
+    const levels=Array.from({length:cloudPriceMaximumLevel-cloudPriceMinimumLevel+1},(_,index)=>cloudPriceMinimumLevel+index);
+    const split=Math.ceil(levels.length/2);
+    const tables=[levels.slice(0,split),levels.slice(split)].map(group=>{
+      const rows=group.map(level=>{
+        const nacklCents=cloudPriceMinimumNacklCents+(level-cloudPriceMinimumLevel)*cloudPriceLevelStepCents;
+        const shellCents=Math.round(nacklCents/10);
+        return `<tr><th scope="row"><bdi>${numbers.format(level)}</bdi></th><td><bdi>${prices.format(nacklCents/100)}</bdi></td><td><bdi>${prices.format(shellCents/100)}</bdi></td></tr>`;
+      }).join('');
+      return `<table class="cloud-price-table" aria-label="${escape(labels.cloudPricePeriod)}"><thead><tr><th scope="col">${escape(labels.cloudPriceLevel)}</th><th scope="col">NACKL</th><th scope="col">SHELL</th></tr></thead><tbody>${rows}</tbody></table>`;
+    }).join('');
+    return `<div class="cloud-price-poster">
+      <div class="cloud-price-masthead"><img src="./cappa-logo.png" alt="" width="84" height="84"><div><p>CAPPA Cloud Mining</p><h3>${escape(labels.cloudPricePeriod)}</h3></div></div>
+      <div class="cloud-price-notes"><p>${escape(labels.cloudPriceFloor)}</p><p>${escape(labels.cloudPriceInvoice)}</p></div>
+      <div class="cloud-price-grid">${tables}</div>
+    </div>`;
+  }
   function renderModal(target){
     const s=w();dialog.dataset.kind=target.kind;
     if(target.kind==='price'){
       document.getElementById('dialog-title').textContent=s.priceTitle;
       const poster=pricePoster();
       body.innerHTML=`<img class="poster-full" src="${poster}" alt="${escape(s.priceAlt)}" width="1024" height="1536"><p class="dialog-caption">${escape(s.posterTerms)}</p><a class="quiet-link" href="${poster}" target="_blank" rel="noopener noreferrer">${escape(s.fullImage)} ↗</a>`;
+    }else if(target.kind==='cloud-price'){
+      document.getElementById('dialog-title').textContent=s.cloudPriceTitle;
+      body.innerHTML=renderCloudPrice(s);
     }else if(target.kind==='preview'){
       document.getElementById('dialog-title').textContent=`${apps[0].name} · v${apps[0].version}`;
       body.innerHTML=`<img class="dialog-image flash-preview-image" src="./assets/flash-preview-v1200.png" width="1280" height="200" alt="${escape(s.demo)}"><p class="dialog-caption">${escape(s.demo)}</p><div class="dialog-cta"><a class="button" href="${release+apps[0].file}">${escape(s.setup)} ↗</a><a class="quiet-link" href="${licenseHelpUrl()}">${escape(s.licenseNav)} ↗</a><a class="quiet-link" href="${releasePage}" target="_blank" rel="noopener noreferrer">${escape(s.officialRelease)} ↗</a></div>`;
@@ -84,6 +111,8 @@
   dialog.addEventListener('pointerdown',event=>{const r=dialog.getBoundingClientRect();backdropPointer=event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom;});
   dialog.addEventListener('click',event=>{if(event.target===dialog&&backdropPointer)dialog.close();backdropPointer=false;});
   document.querySelectorAll('[data-price]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'price'},b)));
+  const cloudPriceButton=document.querySelector('[data-cloud-price]');
+  cloudPriceButton.addEventListener('click',()=>openModal({kind:'cloud-price'},cloudPriceButton));
   document.querySelectorAll('[data-preview]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'preview'},b)));
   document.querySelectorAll('[data-app]').forEach(b=>b.addEventListener('click',()=>openModal({kind:'app',id:b.dataset.app},b)));
   filters.forEach(button=>button.addEventListener('click',()=>{platform=button.dataset.filter;filters.forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});filterCards();}));
