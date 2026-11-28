@@ -4,8 +4,8 @@ window.CAPPA_APPS = [
     "name": "CAPPA Flash",
     "platform": "windows",
     "os": "Windows · x64",
-    "version": "1.2.09",
-    "file": "CAPPA-Flash-v1.2.09-x64-Setup.exe?build=43895589",
+    "version": "1.3.00",
+    "file": "CAPPA-Flash-v1.3.00-RewardGuard-AvgColor-x64-Setup.exe?build=9169f188",
     "icon": "eagle-windows-v110.png",
     "search": "flash eagle CAPPA Flash Windows windows x64"
   },
